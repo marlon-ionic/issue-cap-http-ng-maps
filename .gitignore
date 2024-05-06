@@ -17,6 +17,9 @@ log.txt
 /.versions
 /coverage
 
+# dotenv environment variables file
+.env
+
 # Ionic
 /.ionic
 /www
