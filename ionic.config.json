@@ -1,0 +1,7 @@
+{
+  "name": "issue-cap-http-ng-maps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
