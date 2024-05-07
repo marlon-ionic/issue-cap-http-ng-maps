@@ -9,7 +9,12 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "npm:reset": "rm -rf node_modules && rm -rf package-lock.json && npm i",
+    "cap:build": "ionic build && npx cap sync",
+    "cap:570": "npm i @capacitor/{android,ios,core,cli}@5.7.0 @capacitor/app@^5.0.0 @capacitor/haptics@^5.0.0 @capacitor/keyboard@^5.0.0 @capacitor/status-bar@^5.0.0 --save-exact && npm run npm:reset && npm run cap:build",
+    "cap:571": "npm i @capacitor/{android,ios,core,cli}@5.7.1 @capacitor/app@^5.0.0 @capacitor/haptics@^5.0.0 @capacitor/keyboard@^5.0.0 @capacitor/status-bar@^5.0.0 --save-exact && npm run npm:reset && npm run cap:build",
+    "cap:6": "npm i @capacitor/{android,ios,core,cli}@^6.0.0 @capacitor/app@^6.0.0 @capacitor/haptics@^6.0.0 @capacitor/keyboard@^6.0.0 @capacitor/status-bar@^6.0.0 --save-exact && npm run npm:reset && npm run cap:build"
   },
   "private": true,
   "dependencies": {
